@@ -4,6 +4,7 @@ html {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    background: #84b6f4;
 }
 
 *,
@@ -15,26 +16,63 @@ html {
 }
 
 body {
-    height: 100%;
-    background: #84b6f4;
+    max-height: 100vh;
     font-family: "Open Sans", "sans-serif";
+    font-weight: bold;
+}
+
+#menu-navegacion {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 50px 0px 0px;
+}
+
+#lista-navegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#menu-navegacion li {
+    margin-right: 35px;
+    font-size: 10px;
+}
+
+#menu-navegacion li:last-child {
+    margin-right: unset;
+}
+
+.centro-pantalla{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contenedor {
-    height: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
 }
 
 #titulo {
-    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+#nombre{
     font-size: 30px;
 }
 
 #subtitulo {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+#descripcion{
+    width: 80%;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
 }

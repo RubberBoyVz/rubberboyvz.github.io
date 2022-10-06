@@ -103,7 +103,7 @@ body {
 
 #descripcion {
     padding: 5px 0;
-    width: 80%;
+    width: 60%;
     margin-top: 20px;
     font-size: 18px;
     line-height: 30px;
@@ -160,5 +160,9 @@ body {
 
     #contenido-principal{
         margin-top: 30px;
+    }
+
+    #descripcion{
+        width: 100%;
     }
 }

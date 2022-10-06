@@ -39,12 +39,15 @@ body {
 #menu-navegacion {
     overflow: hidden;
     position: fixed;
-    top: 20px;
-    right: 10%;
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10%;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     position: fixed;
+    background: var(--color-principal);
 }
 
 #lista-navegacion {
@@ -71,15 +74,17 @@ body {
     font-size: 15px;
 }
 
-#contenido-principal {
-    width: 80%;
+#contenido-principal{
+    height: 100vh;
+    max-width: 70%;
     margin: 0 auto;
-    margin-top: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    align-items: center;
+}
+
+#informacion-personal{
     color: var(--blanco);
+    max-width: 100%;
 }
 
 #titulo {
@@ -103,7 +108,7 @@ body {
 
 #descripcion {
     padding: 5px 0;
-    width: 60%;
+    width: 90%;
     margin-top: 20px;
     font-size: 18px;
     line-height: 30px;
@@ -131,6 +136,14 @@ body {
     list-style: none;
 }
 
+
+#foto-perfil img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 @media (max-width: 400px) {
     #menu-navegacion {
         width: 100%;
@@ -138,6 +151,7 @@ body {
         right: unset;
         top: 10px;
         text-align: center;
+        padding-right: unset;
     }
 
     #lista-navegacion {
@@ -159,10 +173,16 @@ body {
     }
 
     #contenido-principal{
+        height: auto;
         margin-top: 30px;
+        flex-direction: column;
     }
 
     #descripcion{
         width: 100%;
+    }
+
+    #foto-perfil{
+        margin-bottom: 30px;
     }
 }
